@@ -1,0 +1,56 @@
+<style>
+    .Overlay{
+        position: absolute;
+        background-color: black;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        display: none;
+    }
+.box{
+        border-radius: 10px;
+        position: absolute;
+        background-color: white;
+        color: black;
+        padding: 20px;
+        overflow: hidden;
+        word-wrap: break-word;
+        width: 40%;
+        z-index: 3;
+        left: 30%;
+        display: none;
+}
+.open{
+    z-index: 2;
+}
+</style>
+
+<div class="Overlay"></div>
+<button onclick="Open()" class="open">Open</button>
+<div class="box">
+    <p>
+        akdjfakghdskjashxldgtyrfudiotgvhsbnmbmfhkhfkhgfhgjhguyytyttewyruygfsfdzgfmjloi;o878kgjdszgtfgmiuutdmrsrhsz,f.osldkgjksadgha;lgkdas;ghkhaglkdsn;kn
+    </p>
+    <button onclick="Close()" class="close">close</button>
+</div>
+<script>
+
+        var o = document.querySelector(".Overlay")
+        var op = document.querySelector(".open")
+        var b = document.querySelector(".box")
+        
+        function Open(){
+            o.style.display = "block"
+            b.style.display="block"
+            op.remove()
+        }
+        function Close()
+        {
+            o.style.display="none"
+            b.style.display="none"
+        }
+        
+</script>

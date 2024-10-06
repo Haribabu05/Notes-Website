@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    
+<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Book</title>
+</head>
+<body>
+    <div class="navbar" >
+        <h1>Booksky</h1>
+    </div>
+    <div class="outer">
+        <div class ="inner">
+            <h2>Complier Design</h2>
+            <h3>Jhon Robert</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae dolorum, nihil reprehenderit atque explicabo deserunt omnis ipsum adipisci qui in aspernatur doloremque nisi nesciunt animi illum quia, vitae distinctio!</p>
+            <button class="close" id="delete" onclick="del(event)">Close</button>
+        </div>
+
+        <div class ="inner">
+            <h2>Complier Design</h2>
+            <h3>Jhon Robert</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae dolorum, nihil reprehenderit atque explicabo deserunt omnis ipsum adipisci qui in aspernatur doloremque nisi nesciunt animi illum quia, vitae distinctio!</p>
+            <button class="close" id="delete" onclick="del(event)">Close</button>
+        </div> 
+        
+    </div>
+    
+    <button class="add" id = "add-popupbox">+</button>
+
+    <div class="overlay"></div>
+    <div class="popup-box" >
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder=" Enter book name" class="book-name" id="bookname">
+            <input type = "text" placeholder="Enter Book id" class = "book-id" id="bookid">
+            <textarea placeholder="Enter Description" id ="bookdesc"></textarea>
+            <button class="book-add" id="add-book">add</button>
+            <button id="book-cancel"  >cancel</button>
+    
+        </form>
+
+
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'poppins',sans-serif;
+}
+.navbar{
+    background-color: red;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.outer{
+    padding: 15px;
+}
+.inner h2{
+    color: red;
+    display: inline-block;
+}
+.inner{
+    word-break: break-word;
+    overflow: hidden;
+    width: 20%;
+    margin: 30px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.close{
+    background-color: red;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+.add{
+    padding: 25px;
+    font-size: x-large;
+    position: fixed;
+    border-radius: 8px;
+    background-color: red;
+    color: black;
+    right: 60px;
+    bottom: 60px;
+
+}
+.add :hover{
+    box-shadow: 0 0 5px #8b8989;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+.popup-box{
+    width: 40%;
+    padding: 40px;
+    background-color: red;
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    left: 30%;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: none;
+    
+}
+.popup-box input{
+    background:transparent;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin :5px;
+    border-bottom: solid black 2px;
+}
+.popup-box textarea{
+    background:transparent;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.popup-box input::placeholder{
+    
+    font-family: 'poppins',sans-serif;
+    color: rgb(0, 0, 0);
+}
+.popup-box textarea::placeholder{
+    color: rgb(10, 10, 11);
+    
+    font-family: 'poppins',sans-serif;
+    
+}
+.popup-box button{
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+
+}
+.popup-box input:focus{
+    outline: none;
+}
+
+.popup-box input:focus{
+    outline: none;
+}
